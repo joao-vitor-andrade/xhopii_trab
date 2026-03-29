@@ -101,11 +101,10 @@ main {
 }
 
 .cadastro a {
-    color: rgb(232, 67, 37)
     text-decoration: none;
+    color: rgb(232, 67, 37)
 }
 
-/* FOOTER */
 footer {
     background: rgb(215, 215, 215);
     padding: 20px 40px;
@@ -127,7 +126,7 @@ footer {
     margin: 3px 0;
 }
 
-copyright {
+.copyright {
     text-align: center;
     font-size: 12px;
 }
