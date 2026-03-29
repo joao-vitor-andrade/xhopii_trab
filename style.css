@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgb(238, 238, 238);
+}
+
+.logo {
+    font-weight: bold;
+    color: rgb(255, 77, 45);
+}
+
+.menu span {
+    margin-right: 15px;
+}
+
+.menu a {
+    color: rgb(255, 77, 45);
+    text-decoration: none;
+}
+
+main {
+    height: 70vh;
+    background: rgb(255, 77, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    width: 350px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(255, 77, 45);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: rgb(232, 67, 37);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+}
+
+.ou {
+    margin: 15px 0;
+    color: rgb(153, 153, 153);
+}
+
+.social button {
+    width: 30%;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.cadastro {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.cadastro a {
+    color: rgb(232, 67, 37)
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: rgb(215, 215, 215);
+    padding: 20px 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-content h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+copyright {
+    text-align: center;
+    font-size: 12px;
+}
