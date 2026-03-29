@@ -14,8 +14,24 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;    
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo span {
     font-weight: bold;
     color: rgb(255, 77, 45);
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
 }
 
 .menu span {
@@ -40,11 +56,13 @@ main {
     padding: 30px;
     width: 350px;
     border-radius: 6px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .login-box input {
@@ -82,22 +100,50 @@ main {
 }
 
 .ou {
-    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
     color: rgb(153, 153, 153);
 }
 
+.ou::before,
+.ou::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.ou::before {
+  margin-right: 10px;
+}
+
+.ou::after {
+  margin-left: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
 .social button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     margin: 5px;
     padding: 8px;
     border: 1px solid rgb(204, 204, 204);
     background: rgb(255, 255, 255);
-    cursor: pointer;
 }
 
 .cadastro {
     margin-top: 15px;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .cadastro a {
@@ -106,27 +152,42 @@ main {
 }
 
 footer {
-    background: rgb(215, 215, 215);
     padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
 }
 
+.footer-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .footer-content h4 {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer-content p {
     font-size: 12px;
-    margin: 3px 0;
+    cursor: pointer;
 }
-
+.footer hr {
+    border: none;
+    border-top: 1px solid rgb(200, 200, 200);
+    margin: 20px 0;
+}
 .copyright {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 12px;
+    border-top: 1px solid rgb(200, 200, 200);
+    margin-top: 20px;
+    padding-top: 15px;
 }
