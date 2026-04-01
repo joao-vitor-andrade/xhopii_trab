@@ -195,11 +195,40 @@ footer {
 .pagamento {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    max-width: 180px;
 }
 
 .pagamento img {
     width: 50px;
+    height: auto;
+}
+
+.siganos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.siganos-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+
+.siganos img {
+    width: 30px;
+}
+
+.atendimento-cli {
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+}
+
+.atendimento-cli img {
+    width: 90px;
 }
 .copyright {
     display: flex;
