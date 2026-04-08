@@ -170,7 +170,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.footer-content > div {
+.footer-content > section {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -180,10 +180,9 @@ footer {
     font-size: 13px;
 }
 
-.footer-content p {
+.footer-content ul li {
     font-size: 12px;
     padding: 3px;
-    color: rgb(119, 119, 119);
     cursor: pointer;
 }
 .footer hr {
