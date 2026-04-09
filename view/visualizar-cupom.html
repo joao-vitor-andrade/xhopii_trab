@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/style.css">
-    <title>Xhopii - Cadastrar Cupom</title>
+    <title>Xhopii - Ver Cupons</title>
 </head>
 
 <body class="fundo-c2c2c2">
+
     <header>
         <section class="topo-marca">
             <figure>
@@ -30,23 +31,53 @@
             <li><a href="visualizar-funcionarios.html">Ver Funcionários</a></li>
             <li><a href="visualizar-produtos.html">Ver Produtos</a></li>
             <li><a href="visualizar-lojas.html">Ver Lojas</a></li>
+            <li><a href="visualizar-cupons.html">Ver Cupons</a></li>
         </ul>
     </nav>
 
-    <main class="cadastro-main">
-        <section class="cadastro-caixa">
-            <h2>Cadastrar Cupom</h2>
+    <main class="lista-main">
+        <section class="lista-caixa">
+            <section class="titulo-paginas-lista">
+                <h2>Cupons Cadastrados</h2>
+            </section>
 
-            <form class="cadastro-form" id="form-cupom">
-                <input type="text" placeholder="Código do cupom (Ex: DESCONTO10)" required>
-                <input type="text" inputmode="numeric" placeholder="Desconto (%) (Ex: 10)" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
-                <input type="text" inputmode="numeric" placeholder="Valor mínimo da compra (Ex: 100,00)" oninput="this.value = this.value.replace(/[^0-9.,]/g, '')" required>
-                <input type="date" title="Data de Início" required>
-                <input type="date" title="Data de Validade" required>
-                <input type="text" inputmode="numeric" placeholder="Quantidade de usos (Ex: 50)" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+            <table class="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Desconto</th>
+                        <th>Valor mínimo</th>
+                        <th>Validade</th>
+                        <th>Usos</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DESCONTO10</td>
+                        <td>10%</td>
+                        <td>R$ 100,00</td>
+                        <td>01/05/2026 até 10/05/2026</td>
+                        <td>50</td>
+                        <td class="tabela-acoes">
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FRETE20</td>
+                        <td>20%</td>
+                        <td>R$ 200,00</td>
+                        <td>05/05/2026 até 20/05/2026</td>
+                        <td>30</td>
+                        <td class="tabela-acoes">
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <button type="submit">CADASTRAR</button>
-            </form>
         </section>
     </main>
 
@@ -71,10 +102,10 @@
                     <li><a href="#">Sobre Nós</a></li>
                     <li><a href="#">Políticas Xhopii</a></li>
                     <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Programa de Afiliados</a></li>
-                    <li><a href="#">Seja um Entregador</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpago</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
                     <li><a href="#">Imprensa</a></li>
                 </ul>
             </article>
@@ -84,7 +115,7 @@
                 <section class="metodos-compra">
                     <img src="../assets/img/logo-visa.png" alt="Visa">
                     <img src="../assets/img/logo-mastercard.png" alt="Mastercard">
-                    <img src="../assets/img/logo-american-express.png" alt="Amex">
+                    <img src="../assets/img/logo-american-express.png" alt="American Express">
                     <img src="../assets/img/logo-boleto.png" alt="Boleto">
                     <img src="../assets/img/logo-hipercard.png" alt="Hipercard">
                     <img src="../assets/img/logo-elo.png" alt="Elo">
@@ -104,7 +135,7 @@
 
             <article class="rodape-secao">
                 <h4>ATENDIMENTO AO CLIENTE</h4>
-                <img src="../assets/img/logo-qr-code.png" alt="QR Code" class="codigo-acesso">
+                <img src="../assets/img/qr-code.png" alt="QR Code" class="codigo-acesso">
                 <section class="atalhos-loja">
                     <img src="../assets/img/logo-google-play.png" alt="Google Play">
                     <img src="../assets/img/logo-store-apple.png" alt="App Store">
