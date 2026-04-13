@@ -5,14 +5,15 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: rgb(245, 245, 245); 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245);
     color: rgb(51, 51, 51);
 }
 
 .fundo-limpo {
     background-color: rgb(255, 255, 255);
 }
+
 
 header {
     background-color: rgb(252, 87, 51);
@@ -45,6 +46,7 @@ header h1 {
     font-weight: bold;
     font-size: 1vw;
 }
+
 
 nav {
     display: flex;
@@ -84,6 +86,7 @@ nav a {
 .menu-neutro a {
     color: rgb(252, 87, 51);
 }
+
 
 main {
     display: flex;
@@ -200,6 +203,7 @@ main {
     width: max-content;
 }
 
+
 .principal-inicio {
     flex-direction: column;
     max-width: 75vw;
@@ -207,7 +211,8 @@ main {
     padding: 2vh 0;
 }
 
-#carrossel-promocoes, #banner-frete {
+#carrossel-promocoes,
+#banner-frete {
     width: 100%;
     margin-bottom: 2vh;
 }
@@ -244,7 +249,7 @@ main {
 
 .item-vitrine:hover {
     border: 1px solid rgb(252, 87, 51);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item-vitrine img {
@@ -283,6 +288,338 @@ main {
     font-size: 0.7vw;
     color: rgb(136, 136, 136);
 }
+
+
+.cadastro-main {
+    display: flex;
+    justify-content: center;
+    padding: 4vh 2vw;
+    background-color: rgb(245, 245, 245);
+    min-height: 60vh;
+}
+
+.cadastro-caixa {
+    background-color: rgb(255, 255, 255);
+    padding: 3vh 2.5vw;
+    width: 32vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cadastro-caixa h2 {
+    font-size: 1.3vw;
+    color: rgb(51, 51, 51);
+    margin-bottom: 2.5vh;
+    font-weight: bold;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.cadastro-form input {
+    padding: 1.2vh 1vw;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 0.9vw;
+    outline: none;
+    width: 100%;
+}
+
+.cadastro-form input:focus {
+    border-color: rgb(252, 87, 51);
+}
+
+.cadastro-form button[type="submit"] {
+    background-color: rgb(252, 87, 51);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1.4vh 0;
+    font-size: 0.9vw;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1vh;
+    text-transform: uppercase;
+}
+
+.cadastro-form button[type="submit"]:hover {
+    background-color: rgb(220, 70, 35);
+}
+
+/* File input customizado */
+.file-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.file-input-container p {
+    font-size: 0.85vw;
+    color: rgb(51, 51, 51);
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 0.8vh 1vw;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 0.85vw;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+    width: max-content;
+}
+
+.custom-file-upload:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.file-input-container input[type="file"] {
+    display: none;
+}
+
+.file-input-container span {
+    font-size: 0.78vw;
+    color: rgb(102, 102, 102);
+}
+
+
+.lista-main {
+    display: flex;
+    justify-content: center;
+    padding: 4vh 2vw;
+    min-height: 60vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.lista-caixa {
+    background-color: rgb(255, 255, 255);
+    padding: 3vh 2.5vw;
+    width: 90vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.titulo-paginas-lista {
+    margin-bottom: 2.5vh;
+    border-bottom: 2px solid rgb(252, 87, 51);
+    padding-bottom: 1vh;
+}
+
+.titulo-paginas-lista h2 {
+    font-size: 1.3vw;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85vw;
+}
+
+.tabela-dados thead {
+    background-color: rgb(252, 87, 51);
+    color: rgb(255, 255, 255);
+}
+
+.tabela-dados th {
+    padding: 1.2vh 1vw;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela-dados td {
+    padding: 1.2vh 1vw;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    color: rgb(51, 51, 51);
+}
+
+.tabela-dados tbody tr:hover {
+    background-color: rgb(250, 245, 244);
+}
+
+.tabela-acoes {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.btn-editar {
+    background-color: rgb(252, 87, 51);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.6vh 0.8vw;
+    font-size: 0.75vw;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background-color: rgb(220, 70, 35);
+}
+
+.btn-excluir {
+    background-color: rgb(255, 255, 255);
+    color: rgb(252, 87, 51);
+    border: 1px solid rgb(252, 87, 51);
+    padding: 0.6vh 0.8vw;
+    font-size: 0.75vw;
+    cursor: pointer;
+}
+
+.btn-excluir:hover {
+    background-color: rgb(252, 87, 51);
+    color: rgb(255, 255, 255);
+}
+
+
+.topo-entrada {
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 12vw;
+}
+
+.marca-autenticacao {
+    display: flex;
+    align-items: center;
+}
+
+.marca-autenticacao img {
+    width: 3.5vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.marca-autenticacao h1 {
+    font-size: 1.8vw;
+    margin: 0;
+    color: rgb(252, 87, 51);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.marca-autenticacao h1 span {
+    color: rgb(51, 51, 51);
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+.suporte-acesso {
+    color: rgb(252, 87, 51);
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.area-autenticacao {
+    background-color: rgb(252, 87, 51);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8vh 0;
+    min-height: 60vh;
+}
+
+.bloco-entrada {
+    display: grid;
+    place-items: center;
+}
+
+.painel-login {
+    width: 28vw;
+    background: rgb(255, 255, 255);
+    padding: 3vh 2vw;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.painel-login h2 {
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+    font-weight: normal;
+}
+
+.formulario-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.formulario-dados input {
+    padding: 1.5vh 1vw;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 1vw;
+    outline: none;
+}
+
+.formulario-dados input:focus {
+    border-color: rgb(252, 87, 51);
+}
+
+#botao-entre {
+    background-color: rgb(252, 87, 51);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1.5vh 0;
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.recursos-extras {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8vw;
+}
+
+.recursos-extras a {
+    color: rgb(0, 85, 179);
+    text-decoration: none;
+}
+
+.divisor-alternativo {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: rgb(153, 153, 153);
+    font-size: 0.8vw;
+}
+
+.divisor-alternativo .traco-separador {
+    flex: 1;
+    height: 1px;
+    background-color: rgb(220, 220, 220);
+}
+
+.acesso-externo {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5vw;
+}
+
+.acesso-externo button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1vh 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 0.8vw;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+
+.acesso-externo button img {
+    width: 1.2vw;
+    height: auto;
+}
+
 
 footer {
     background-color: rgb(245, 245, 245);
@@ -370,153 +707,4 @@ footer {
     color: rgb(0, 0, 0);
     font-size: 0.8vw;
     border-top: 1px solid rgb(224, 224, 224);
-}
-
-.topo-entrada {
-    background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh 12vw;
-}
-
-.marca-autenticacao {
-    display: flex;
-    align-items: center;
-}
-
-.marca-autenticacao img {
-    width: 3.5vw;
-    height: auto;
-    margin-right: 1vw;
-}
-
-.marca-autenticacao h1 {
-    font-size: 1.8vw;
-    margin: 0;
-    color: rgb(252, 87, 51);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.marca-autenticacao h1 span {
-    color: rgb(51, 51, 51);
-    margin-left: 1vw;
-    font-size: 1.5vw;
-    font-weight: normal;
-}
-
-.suporte-acesso {
-    color: rgb(252, 87, 51);
-    font-size: 1vw;
-    text-decoration: none;
-}
-
-.area-autenticacao {
-    background-color: rgb(252, 87, 51);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 8vh 0;
-    max-width: 100%;
-}
-
-.bloco-entrada {
-    display: grid;
-    place-items: center;
-}
-
-.painel-login {
-    width: 28vw;
-    background: rgb(255, 255, 255);
-    padding: 3vh 2vw;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.painel-login h2 {
-    text-align: left;
-    color: rgb(51, 51, 51);
-    font-size: 1.5vw;
-    margin-bottom: 3vh;
-    font-weight: normal;
-}
-
-.formulario-dados {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.formulario-dados input {
-    padding: 1.5vh 1vw;
-    border: 1px solid rgb(220, 220, 220);
-    font-size: 1vw;
-    outline: none;
-}
-
-.formulario-dados input:focus {
-    border-color: rgb(252, 87, 51);
-}
-
-#botao-entre {
-    background-color: rgb(252, 87, 51);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 1.5vh 0;
-    font-size: 1vw;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.recursos-extras {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8vw;
-}
-
-.recursos-extras a {
-    color: rgb(0, 85, 179);
-    text-decoration: none;
-}
-
-.divisor-alternativo {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    color: rgb(153, 153, 153);
-    font-size: 0.8vw;
-}
-
-.divisor-alternativo .traco-separador {
-    flex: 1;
-    height: 1px;
-    background-color: rgb(220, 220, 220);
-}
-
-.acesso-externo {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5vw;
-}
-
-.acesso-externo button {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5vw;
-    padding: 1vh 0;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(220, 220, 220);
-    font-size: 0.8vw;
-    cursor: pointer;
-    color: rgb(51, 51, 51);
-}
-
-.acesso-externo button img {
-    width: 1.2vw;
-    height: auto;
 }
