@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(245, 245, 245);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: rgb(245, 245, 245); 
     color: rgb(51, 51, 51);
 }
 
@@ -15,6 +15,9 @@ body {
 }
 
 
+/* ========================
+   HEADER
+======================== */
 header {
     background-color: rgb(252, 87, 51);
     display: flex;
@@ -48,6 +51,9 @@ header h1 {
 }
 
 
+/* ========================
+   NAV
+======================== */
 nav {
     display: flex;
     align-items: center;
@@ -88,6 +94,9 @@ nav a {
 }
 
 
+/* ========================
+   MAIN - PRODUTO (visualizar-produto)
+======================== */
 main {
     display: flex;
     justify-content: center;
@@ -204,6 +213,9 @@ main {
 }
 
 
+/* ========================
+   MAIN - HOME (index)
+======================== */
 .principal-inicio {
     flex-direction: column;
     max-width: 75vw;
@@ -289,11 +301,7 @@ main {
     color: rgb(136, 136, 136);
 }
 
-
-.cadastro-main {
-    display: flex;
-    justify-content: center;
-    padding: 4vh 2vw;
+footer {
     background-color: rgb(245, 245, 245);
     min-height: 60vh;
 }
@@ -380,10 +388,7 @@ main {
 .file-input-container span {
     font-size: 0.78vw;
     color: rgb(102, 102, 102);
-}
-
-
-.lista-main {
+    font-size: 0.8vw;
     display: flex;
     justify-content: center;
     padding: 4vh 2vw;
@@ -471,6 +476,9 @@ main {
 }
 
 
+/* ========================
+   LOGIN / AUTENTICACAO
+======================== */
 .topo-entrada {
     background: rgb(255, 255, 255);
     display: flex;
@@ -618,93 +626,4 @@ main {
 .acesso-externo button img {
     width: 1.2vw;
     height: auto;
-}
-
-
-footer {
-    background-color: rgb(245, 245, 245);
-    border-top: 1px solid rgb(224, 224, 224);
-    display: flex;
-    flex-direction: column;
-}
-
-.rodape-conteudo {
-    display: flex;
-    justify-content: space-between;
-    padding: 5vh 5vw;
-    max-width: 100%;
-}
-
-.rodape-secao {
-    flex: 1;
-    padding: 0 1vw;
-}
-
-.rodape-secao h4 {
-    font-size: 0.9vw;
-    color: rgb(51, 51, 51);
-    margin-bottom: 2vh;
-    font-weight: bold;
-}
-
-.rodape-secao ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.rodape-secao li {
-    margin-bottom: 1vh;
-}
-
-.rodape-secao a {
-    text-decoration: none;
-    color: rgb(102, 102, 102);
-    font-size: 0.8vw;
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
-}
-
-.rodape-secao a img {
-    width: 1vw;
-    height: auto;
-}
-
-.rodape-secao a:hover {
-    color: rgb(252, 87, 51);
-}
-
-.metodos-compra {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5vw;
-}
-
-.metodos-compra img {
-    width: 100%;
-    max-width: 3vw;
-    height: auto;
-}
-
-.codigo-acesso {
-    width: 6vw;
-    height: auto;
-    margin-bottom: 1vh;
-}
-
-.atalhos-loja img {
-    width: 6vw;
-    height: auto;
-    display: block;
-    margin-bottom: 0.5vh;
-}
-
-.rodape-fim {
-    text-align: center;
-    padding: 2vh 0;
-    background-color: rgb(245, 245, 245);
-    color: rgb(0, 0, 0);
-    font-size: 0.8vw;
-    border-top: 1px solid rgb(224, 224, 224);
 }
