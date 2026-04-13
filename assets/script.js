@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ========================
-    // GALERIA DE PRODUTO
-    // ========================
+
     const galeria = document.getElementById('galeria');
 
     if (galeria) {
@@ -12,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const botoesTamanho = document.querySelectorAll('.opcoes-estilo:nth-of-type(2) button');
         const textoTamanho = document.getElementById('tamanho-selecionado');
 
-        // Nomes de arquivo atualizados para corresponder aos assets reais
         const mapaCores = {
             'Preto': '../assets/img/produto1.png',
             'Azul':  '../assets/img/produto2.png',
@@ -63,9 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========================
-    // FORMULÁRIO - CLIENTE
-    // ========================
     const formCliente = document.getElementById('form-cliente');
     const inputFotoCliente = document.getElementById('foto-cliente');
     const spanNomeFileCliente = document.getElementById('file-name-cliente');
@@ -85,9 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========================
-    // FORMULÁRIO - FUNCIONÁRIO
-    // ========================
     const formFuncionario = document.getElementById('form-funcionario');
     const inputFotoFuncionario = document.getElementById('foto-funcionario');
     const spanNomeFileFuncionario = document.getElementById('file-name-funcionario');
@@ -107,9 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========================
-    // FORMULÁRIO - PRODUTO
-    // ========================
     const formProduto = document.getElementById('form-produto');
     const inputFotoProduto = document.getElementById('foto-produto');
     const spanNomeFileProduto = document.getElementById('file-name-produto');
@@ -129,9 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========================
-    // FORMULÁRIO - LOJA
-    // ========================
     const formLoja = document.getElementById('form-loja');
     const inputLogoLoja = document.getElementById('logo-loja');
     const spanNomeFileLoja = document.getElementById('file-name-loja');
@@ -151,9 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========================
-    // FORMULÁRIO - CUPOM
-    // ========================
+
     const formCupom = document.getElementById('form-cupom');
 
     if (formCupom) {
@@ -164,9 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ========================
-    // BOTÕES DE TABELA
-    // ========================
     const botoesExcluir = document.querySelectorAll('.btn-excluir');
     const botoesEditar = document.querySelectorAll('.btn-editar');
 

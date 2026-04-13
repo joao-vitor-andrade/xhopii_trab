@@ -14,9 +14,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-/* ========================
-   HEADER
-======================== */
+
 header {
     background-color: rgb(252, 87, 51);
     display: flex;
@@ -49,9 +47,7 @@ header h1 {
     font-size: 1vw;
 }
 
-/* ========================
-   NAV
-======================== */
+
 nav {
     display: flex;
     align-items: center;
@@ -91,9 +87,7 @@ nav a {
     color: rgb(252, 87, 51);
 }
 
-/* ========================
-   MAIN - PRODUTO (visualizar-produto)
-======================== */
+
 main {
     display: flex;
     justify-content: center;
@@ -209,9 +203,7 @@ main {
     width: max-content;
 }
 
-/* ========================
-   MAIN - HOME (index)
-======================== */
+
 .principal-inicio {
     flex-direction: column;
     max-width: 75vw;
@@ -297,9 +289,7 @@ main {
     color: rgb(136, 136, 136);
 }
 
-/* ========================
-   MAIN - CADASTRO
-======================== */
+
 .cadastro-main {
     display: flex;
     justify-content: center;
@@ -356,7 +346,6 @@ main {
     background-color: rgb(220, 70, 35);
 }
 
-/* File input customizado */
 .file-input-container {
     display: flex;
     flex-direction: column;
@@ -392,9 +381,7 @@ main {
     color: rgb(102, 102, 102);
 }
 
-/* ========================
-   MAIN - LISTAGEM (visualizar-*)
-======================== */
+
 .lista-main {
     display: flex;
     justify-content: center;
@@ -482,9 +469,7 @@ main {
     color: rgb(255, 255, 255);
 }
 
-/* ========================
-   LOGIN / AUTENTICACAO
-======================== */
+
 .topo-entrada {
     background: rgb(255, 255, 255);
     display: flex;
@@ -634,9 +619,7 @@ main {
     height: auto;
 }
 
-/* ========================
-   FOOTER
-======================== */
+
 footer {
     background-color: rgb(245, 245, 245);
     border-top: 1px solid rgb(224, 224, 224);
